@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <ul>
+    <li><%= link_to "Home", welcome_index_path %></li>
+    <!-- This Ruby 'link_to' helper method creates this html link: <a href="/welcome/index">Home</a> -->
+    <li><%= link_to "About", welcome_about_path %></li>
+  </ul>
+
 <%= yield %>
 
 </body>
